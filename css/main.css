@@ -35,6 +35,11 @@ div {
 
   background-color: limegreen;
   opacity: 0;
+  transition: all 1s ease;
+}
+
+.show {
+  opacity: 1;
 }
 
 .diamond {
@@ -45,6 +50,12 @@ div {
 
   background-color: hotpink;
   transform: rotate(45deg);
+  transition: all 350ms linear;
+}
+
+.slide {
+  right: 40px;
+  transition: all 350ms linear;
 }
 
 .panel {
@@ -63,6 +74,10 @@ div {
 .panel h2 {
   margin: 0;
   padding: 3rem 0;
+}
+
+.collapse {
+  max-height: 1em;
 }
 
 .circle {
