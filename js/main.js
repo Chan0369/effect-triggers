@@ -11,5 +11,9 @@ $('.btn-collapse-expand').on('click', function () {
 });
 
 $('.btn-bounce').on('click', function () {
-  $('.circle').toggleClass('bounce');
+  $('.circle').addClass('bounce');
+});
+
+$('.circle').on('animationend', function () {
+  $(this).removeClass('bounce');
 });
